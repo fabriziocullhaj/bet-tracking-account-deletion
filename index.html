@@ -1,13 +1,75 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Eliminazione account - Bet tracking</title>
+  <title>Account deletion - Bet tracking</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .lang { display: none; }
+  </style>
 </head>
-<body style="font-family: sans-serif; padding: 2rem; max-width: 600px; margin: auto;">
-  <h1>Eliminazione dell'account</h1>
-  <p>Per eliminare il tuo account sull'app <strong>Bet tracking</strong> contatta il supporto: <a href="mailto:customer.bet.tracking@gmail.com">customer.bet.tracking@gmail.com</a></p>
-  <p>L'eliminazione è <strong>immediata e irreversibile</strong>. Tutti i dati associati all’account, comprese scommesse, statistiche e preferenze, saranno rimossi.</p>
+<body>
+
+  <!-- Italiano -->
+  <div class="lang it">
+    <h1>Eliminazione dell'account</h1>
+    <p>Per eliminare il tuo account sull'app <strong>Bet tracking</strong> contatta il supporto: <a href="mailto:customer.bet.tracking@gmail.com">customer.bet.tracking@gmail.com</a></p>
+    <p>L'eliminazione è <strong>immediata e irreversibile</strong>. Tutti i dati associati all’account, comprese scommesse, statistiche e preferenze, saranno rimossi.</p>
+  </div>
+
+  <!-- English -->
+  <div class="lang en">
+    <h1>Account Deletion</h1>
+    <p>To delete your account from the <strong>Bet tracking</strong> app, contact support: <a href="mailto:customer.bet.tracking@gmail.com">customer.bet.tracking@gmail.com</a></p>
+    <p>Deletion is <strong>immediate and irreversible</strong>. All data associated with the account, including bets, statistics, and preferences, will be removed.</p>
+  </div>
+
+  <!-- Español -->
+  <div class="lang es">
+    <h1>Eliminación de cuenta</h1>
+    <p>Para eliminar tu cuenta de la aplicación <strong>Bet tracking</strong>, contacta con el soporte: <a href="mailto:customer.bet.tracking@gmail.com">customer.bet.tracking@gmail.com</a></p>
+    <p>La eliminación es <strong>inmediata e irreversible</strong>. Todos los datos asociados a la cuenta, incluidas apuestas, estadísticas y preferencias, serán eliminados.</p>
+  </div>
+
+  <!-- Français -->
+  <div class="lang fr">
+    <h1>Suppression de compte</h1>
+    <p>Pour supprimer votre compte de l'application <strong>Bet tracking</strong>, contactez le support : <a href="mailto:customer.bet.tracking@gmail.com">customer.bet.tracking@gmail.com</a></p>
+    <p>La suppression est <strong>immédiate et irréversible</strong>. Toutes les données associées au compte, y compris les paris, les statistiques et les préférences, seront supprimées.</p>
+  </div>
+
+  <!-- Deutsch -->
+  <div class="lang de">
+    <h1>Konto löschen</h1>
+    <p>Um dein Konto in der <strong>Bet tracking</strong>-App zu löschen, kontaktiere den Support: <a href="mailto:customer.bet.tracking@gmail.com">customer.bet.tracking@gmail.com</a></p>
+    <p>Die Löschung ist <strong>sofort und unwiderruflich</strong>. Alle mit dem Konto verbundenen Daten, einschließlich Wetten, Statistiken und Präferenzen, werden entfernt.</p>
+  </div>
+
+  <!-- Português -->
+  <div class="lang pt">
+    <h1>Exclusão de conta</h1>
+    <p>Para excluir sua conta no aplicativo <strong>Bet tracking</strong>, entre em contato com o suporte: <a href="mailto:customer.bet.tracking@gmail.com">customer.bet.tracking@gmail.com</a></p>
+    <p>A exclusão é <strong>imediata e irreversível</strong>. Todos os dados associados à conta, incluindo apostas, estatísticas e preferências, serão removidos.</p>
+  </div>
+
+  <!-- Shqip (Albanian) -->
+  <div class="lang sq">
+    <h1>Fshirja e llogarisë</h1>
+    <p>Për të fshirë llogarinë tuaj në aplikacionin <strong>Bet tracking</strong>, kontaktoni mbështetjen: <a href="mailto:customer.bet.tracking@gmail.com">customer.bet.tracking@gmail.com</a></p>
+    <p>Fshirja është <strong>e menjëhershme dhe e pakthyeshme</strong>. Të gjitha të dhënat e lidhura me llogarinë, përfshirë bastet, statistikat dhe preferencat, do të hiqen.</p>
+  </div>
+
+  <script>
+    const userLang = navigator.language || navigator.userLanguage;
+    const lang = userLang.split('-')[0];
+    const el = document.querySelector(`.lang.${lang}`) || document.querySelector('.lang.en');
+    if (el) el.style.display = 'block';
+  </script>
 </body>
 </html>
